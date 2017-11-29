@@ -42,7 +42,8 @@ def handle_message(event):
         reply = '雞肉飯...'
     elif t == '台北':
         reply = '天龍人...'
-    
+    elif t == '彰化':
+        reply = '都流氓...'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply))
